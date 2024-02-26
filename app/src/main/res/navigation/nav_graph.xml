@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav1Fragment">
+
+    <fragment
+        android:id="@+id/nav1Fragment"
+        android:name="www.harunmese.dev.bottomnavigation1.Nav1Fragment"
+        android:label="fragment_nav1"
+        tools:layout="@layout/fragment_nav1" />
+    <fragment
+        android:id="@+id/nav2Fragment"
+        android:name="www.harunmese.dev.bottomnavigation1.Nav2Fragment"
+        android:label="fragment_nav2"
+        tools:layout="@layout/fragment_nav2" />
+    <fragment
+        android:id="@+id/nav3Fragment"
+        android:name="www.harunmese.dev.bottomnavigation1.Nav3Fragment"
+        android:label="fragment_nav3"
+        tools:layout="@layout/fragment_nav3" />
+    <fragment
+        android:id="@+id/nav4Fragment"
+        android:name="www.harunmese.dev.bottomnavigation1.Nav4Fragment"
+        android:label="fragment_nav4"
+        tools:layout="@layout/fragment_nav4" />
+    <fragment
+        android:id="@+id/nav5Fragment"
+        android:name="www.harunmese.dev.bottomnavigation1.Nav5Fragment"
+        android:label="fragment_nav5"
+        tools:layout="@layout/fragment_nav5" />
+</navigation>

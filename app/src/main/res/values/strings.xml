@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bottom Navigation1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav1">Houseboat</string>
+    <string name="nav2">Groups</string>
+    <string name="nav3">Agriculture</string>
+    <string name="nav4">Stories</string>
+    <string name="nav5">Profile</string>
+
+</resources>
