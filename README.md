@@ -29,3 +29,25 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
 }
 ```
+
+### MainActivity
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding : ActivityMainBinding
+    private lateinit var navController: NavController
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        navController = navHostFragment.navController
+        setupWithNavController(binding.bottomNavigationView,navController)
+    }
+}
+```
