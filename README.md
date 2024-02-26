@@ -8,7 +8,7 @@
 
 <hr>
 
-viewBinding
+## viewBinding
 ```kotlin
 android {
     buildFeatures{
@@ -18,7 +18,7 @@ android {
 ```
 
 
-Implementation dependencies 
+## Implementation dependencies 
 
 ```kotlin
 dependencies {
@@ -27,7 +27,16 @@ dependencies {
 }
 ```
 
-### app_menu.xml
+#### app_nav_selector.xml in drawble
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_selected="true" android:color="#000000" />
+<item android:color="#B3B3B3"/>
+</selector>
+```
+
+#### app_menu.xml in menu
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -65,7 +74,7 @@ dependencies {
         android:title="@string/nav5" />
 </menu>
 ```
-### nav_graph.xml
+#### nav_graph.xml in navigation
 
 ```xml
 <<?xml version="1.0" encoding="utf-8"?>
@@ -103,7 +112,7 @@ dependencies {
 </navigation>/androidx.constraintlayout.widget.ConstraintLayout>
 
 ```
-### activity_main.xml
+## activity_main.xml
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -141,7 +150,7 @@ dependencies {
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 ```
-### MainActivity
+## MainActivity
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
